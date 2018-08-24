@@ -34,6 +34,14 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'eugen0329/vim-esearch'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'matze/vim-move'
+Plugin 'majutsushi/tagbar'
+Plugin 'taglist'
+
+" let g:move_key_modifier = 'A'
+
+
+nmap <F8> :TagbarToggle<CR>
 
 set clipboard=unnamed
 let vim_markdown_preview_github=1
