@@ -144,3 +144,8 @@ endif
 " ## end of OPAM user-setup addition for vim / base ## keep this line
 "
 "
+augroup Python
+	autocmd!
+	autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+augroup END
+
