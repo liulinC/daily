@@ -1,0 +1,1857 @@
+main main.c:1352
+	ptimer_new ptimer.c:315
+		xcalloc xmalloc.c:94
+		posix_init ptimer.c:114
+		ptimer_reset ptimer.c:345
+			posix_measure ptimer.c:168
+	ptimer_measure ptimer.c:360
+		posix_measure ptimer.c:168
+		posix_diff ptimer.c:174
+	i18n_initialize main.c:153
+	base_name basename.c:30
+		last_component basename-lgpl.c:32
+		base_len basename-lgpl.c:61
+		xstrndup xstrndup.c:32
+	defaults init.c:395
+	home_dir init.c:525
+		xstrdup xmalloc.c:121
+			xmemdup xmalloc.c:113
+				xmalloc xmalloc.c:41
+	init_switches main.c:505
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+		no_prefix main.c:478
+	initialize init.c:733
+		file_exists_p utils.c:566
+			stat ()
+		wgetrc_file_name init.c:627
+			wgetrc_env_file_name init.c:576
+			wgetrc_user_file_name init.c:597
+				aprintf utils.c:302
+				file_exists_p utils.c:566
+					stat ()
+	log_init log.c:625
+	set_progress_implementation progress.c:113
+		bar_set_params progress.c:1195
+	rewrite_shorthand_url url.c:588
+		url_scheme url.c:459
+			c_strncasecmp c-strncasecmp.c:29
+				c_tolower
+				c_tolower
+			c_strncasecmp c-strncasecmp.c:29
+				c_tolower
+				c_tolower
+			c_strncasecmp c-strncasecmp.c:29
+				c_tolower
+				c_tolower
+			c_strncasecmp c-strncasecmp.c:29
+				c_tolower
+				c_tolower
+		aprintf utils.c:302
+	load_hsts main.c:190
+		get_hsts_database main.c:175
+			aprintf utils.c:302
+		hsts_store_open hsts.c:502
+			xcalloc xmalloc.c:94
+			hash_table_new hash.c:274
+				xmalloc xmalloc.c:41
+				prime_size hash.c:227
+				xmalloc xmalloc.c:41
+			file_exists_p utils.c:566
+				stat ()
+			hsts_file_access_valid hsts.c:346
+				stat ()
+			fopen_stat utils.c:852
+				fstat ()
+			hsts_read_database hsts.c:273
+				c_isspace
+				c_isspace
+				c_isspace
+				c_isspace
+				hsts_new_entry hsts.c:235
+					hsts_new_entry_internal es=true)
+						xmalloc xmalloc.c:41
+						xcalloc xmalloc.c:94
+						xstrdup_lower utils.c:228
+							xstrdup xmalloc.c:121
+								xmemdup xmalloc.c:113
+									xmalloc xmalloc.c:41
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+						is_valid_ip_address host.c:1071
+							is_valid_ipv4_address host.c:439
+							is_valid_ipv6_address host.c:492
+								c_isxdigit
+						hash_table_contains hash.c:371
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+						hash_table_put hash.c:424
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+				c_isspace
+				hsts_new_entry hsts.c:235
+					hsts_new_entry_internal hsts.c:174
+						xmalloc xmalloc.c:41
+						xcalloc xmalloc.c:94
+						xstrdup_lower utils.c:228
+							xstrdup xmalloc.c:121
+								xmemdup xmalloc.c:113
+									xmalloc xmalloc.c:41
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+						is_valid_ip_address host.c:1071
+							is_valid_ipv4_address host.c:439
+							is_valid_ipv6_address host.c:492
+								c_isxdigit
+						hash_table_contains hash.c:371
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+						hash_table_put hash.c:424
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+				c_isspace
+				hsts_new_entry hsts.c:235
+					hsts_new_entry_internal hsts.c:174
+						xmalloc xmalloc.c:41
+						xcalloc xmalloc.c:94
+						xstrdup_lower utils.c:228
+							xstrdup xmalloc.c:121
+								xmemdup xmalloc.c:113
+									xmalloc xmalloc.c:41
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+						is_valid_ip_address host.c:1071
+							is_valid_ipv4_address host.c:439
+							is_valid_ipv6_address host.c:492
+								c_isxdigit
+								c_toupper
+								c_isxdigit
+						hash_table_contains hash.c:371
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+								hsts_cmp_func hsts.c:105
+						hash_table_put hash.c:424
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+								hsts_cmp_func hsts.c:105
+				c_isspace
+				hsts_new_entry hsts.c:235
+					hsts_new_entry_internal es=true)
+						xmalloc xmalloc.c:41
+						xcalloc xmalloc.c:94
+						xstrdup_lower utils.c:228
+							xstrdup xmalloc.c:121
+								xmemdup xmalloc.c:113
+									xmalloc xmalloc.c:41
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+						is_valid_ip_address host.c:1071
+							is_valid_ipv4_address host.c:439
+							is_valid_ipv6_address host.c:492
+								c_isxdigit
+								c_toupper
+								c_isxdigit
+						hash_table_contains hash.c:371
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+						hash_table_put hash.c:424
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+				c_isspace
+				hsts_new_entry hsts.c:235
+					hsts_new_entry_internal hsts.c:174
+						xmalloc xmalloc.c:41
+						xcalloc xmalloc.c:94
+						xstrdup_lower utils.c:228
+							xstrdup xmalloc.c:121
+								xmemdup xmalloc.c:113
+									xmalloc xmalloc.c:41
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+						is_valid_ip_address host.c:1071
+							is_valid_ipv4_address host.c:439
+							is_valid_ipv6_address host.c:492
+								c_isxdigit
+						hash_table_contains hash.c:371
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+						hash_table_put hash.c:424
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+				c_isspace
+				hsts_new_entry hsts.c:235
+					hsts_new_entry_internal hsts.c:174
+						xmalloc xmalloc.c:41
+						xcalloc xmalloc.c:94
+						xstrdup_lower utils.c:228
+							xstrdup xmalloc.c:121
+								xmemdup xmalloc.c:113
+									xmalloc xmalloc.c:41
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+						is_valid_ip_address host.c:1071
+							is_valid_ipv4_address host.c:439
+							is_valid_ipv6_address host.c:492
+								c_isxdigit
+						hash_table_contains hash.c:371
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+						hash_table_put hash.c:424
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+				c_isspace
+				hsts_new_entry hsts.c:235
+					hsts_new_entry_internal es=true)
+						xmalloc xmalloc.c:41
+						xcalloc xmalloc.c:94
+						xstrdup_lower utils.c:228
+							xstrdup xmalloc.c:121
+								xmemdup xmalloc.c:113
+									xmalloc xmalloc.c:41
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+						is_valid_ip_address host.c:1071
+							is_valid_ipv4_address host.c:439
+							is_valid_ipv6_address host.c:492
+								c_isxdigit
+								c_toupper
+								c_isxdigit
+						hash_table_contains hash.c:371
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+						hash_table_put hash.c:424
+							find_cell hash.c:318
+								hsts_hash_func hsts.c:92
+			fstat ()
+	url_parse url.c:700
+		url_scheme url.c:459
+			c_strncasecmp c-strncasecmp.c:29
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+				c_tolower
+		reencode_escapes url.c:413
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+			char_needs_escaping url.c:314
+		url_skip_credentials url.c:530
+			const
+		init_seps url.c:659
+		strpbrk_or_eos url.c:633
+			668, url.c:633
+		scheme_default_port url.c:504
+		xcalloc xmalloc.c:94
+		strdupdelim utils.c:242
+			xmalloc xmalloc.c:41
+		strdupdelim utils.c:242
+			xstrdup xmalloc.c:121
+				xmemdup xmalloc.c:113
+					xmalloc xmalloc.c:41
+		path_simplify url.c:1888
+		split_path url.c:1035
+			xstrdup xmalloc.c:121
+				xmemdup xmalloc.c:113
+					xmalloc xmalloc.c:41
+			xstrdup xmalloc.c:121
+				xmemdup xmalloc.c:113
+					xmalloc xmalloc.c:41
+			url_unescape url.c:218
+				url_unescape_1 url.c:177
+			url_unescape url.c:218
+				url_unescape_1 url.c:177
+		lowercase_str url.c:645
+			c_isupper
+			c_isupper
+			c_isupper
+			c_isupper
+			c_isupper
+			c_isupper
+			c_isupper
+			c_isupper
+			c_isupper
+			c_isupper
+			c_isupper
+			c_isupper
+			c_isupper
+		url_string url.c:2196
+			full_path_length url.c:1062
+			url_escape_allow_passthrough url.c:302
+				url_escape_1 url.c:245
+			xmalloc xmalloc.c:41
+			full_path_write url.c:1090
+	retrieve_url retr.c:876
+		xstrdup xmalloc.c:121
+			xmemdup xmalloc.c:113
+				xmalloc xmalloc.c:41
+		getproxy retr.c:1455
+			no_proxy_match retr.c:1514
+		hsts_match hsts.c:375
+			xmalloc xmalloc.c:41
+			hsts_find_entry hsts.c:119
+				xmalloc xmalloc.c:41
+				xstrdup_lower utils.c:228
+					xstrdup xmalloc.c:121
+						xmemdup xmalloc.c:113
+							xmalloc xmalloc.c:41
+					c_tolower
+					c_tolower
+					c_tolower
+					c_tolower
+					c_tolower
+					c_tolower
+					c_tolower
+					c_tolower
+					c_tolower
+					c_tolower
+					c_tolower
+					c_tolower
+					c_tolower
+				hash_table_get hash.c:339
+					find_cell hash.c:318
+						hsts_hash_func hsts.c:92
+						hsts_cmp_func hsts.c:105
+				hash_table_get hash.c:339
+					find_cell hash.c:318
+						hsts_hash_func hsts.c:92
+						hsts_cmp_func hsts.c:105
+		http_loop http.c:4170
+			load_cookies http.c:5244
+				cookie_jar_new cookies.c:92
+					xmalloc xmalloc.c:41
+					make_nocase_string_hash_table hash.c:708
+						hash_table_new hash.c:274
+							xmalloc xmalloc.c:41
+							prime_size hash.c:227
+							xmalloc xmalloc.c:41
+			has_wildcards_p utils.c:1234
+			url_file_name url.c:1681
+				strdupdelim utils.c:242
+					xmalloc xmalloc.c:41
+				append_uri_pathel url.c:1462
+					url_unescape url.c:218
+						url_unescape_1 url.c:177
+					xrealloc xmalloc.c:53
+					append_null url.c:1334
+				append_char url.c:1342
+					append_null url.c:1334
+				convert_fname url.c:1552
+					rpl_nl_langinfo nl_langinfo.c:95
+					iconv_open iconv_open.c:71
+						__gconv_open gconv_open.c:110
+							__gconv_find_transform
+								__gconv_lookup_cache
+									find_module gconv_cache.c:195
+										__gconv_find_shlib gconv_dl.c:116
+											__GI___libc_dlopen_mode dl-libc.c:163
+												dlerror_run dl-libc.c:46
+													_dl_catch_error dl-error.c:187
+														do_dlopen dl-libc.c:87
+															_dl_open
+																_dl_catch_error e@entry=0x7ffff7dec4d0 <dl_open_worker>,
+																	dl_open_worker dl-open.c:575
+																		_dl_init dl-init.c:120
+																			call_init dl-init.c:30
+																				call_init dl-init.c:72
+																					frame_dummy
+																					register_tm_clones
+					xmalloc xmalloc.c:41
+				append_string url.c:1356
+					xrealloc xmalloc.c:53
+					append_null url.c:1334
+				get_max_length utils.c:2661
+				append_string url.c:1356
+					xrealloc xmalloc.c:53
+					append_null url.c:1334
+				unique_name utils.c:697
+					file_exists_p utils.c:566
+						stat ()
+					unique_name_1 utils.c:658
+						number_to_string utils.c:1783
+						file_exists_p utils.c:566
+							stat ()
+						number_to_string utils.c:1783
+						file_exists_p utils.c:566
+							stat ()
+						number_to_string utils.c:1783
+						file_exists_p utils.c:566
+							stat ()
+						number_to_string utils.c:1783
+						file_exists_p utils.c:566
+							stat ()
+						number_to_string utils.c:1783
+						file_exists_p utils.c:566
+							stat ()
+						number_to_string utils.c:1783
+						file_exists_p utils.c:566
+							stat ()
+						number_to_string utils.c:1783
+						file_exists_p utils.c:566
+							stat ()
+						number_to_string utils.c:1783
+						file_exists_p utils.c:566
+							stat ()
+						number_to_string utils.c:1783
+						file_exists_p utils.c:566
+							stat ()
+						xstrdup xmalloc.c:121
+							xmemdup xmalloc.c:113
+								xmalloc xmalloc.c:41
+			file_exists_p utils.c:566
+				stat ()
+			sleep_between_retrievals retr.c:1347
+			datetime_str utils.c:458
+				fmttime utils.c:434
+					__tz_convert tzset.c:621
+						tzset_internal tzset.c:441
+							__tzfile_read tzfile.c:197
+							__tzfile_read tzfile.c:201
+							__tzfile_read tzfile.c:200
+							__tzfile_read tzfile.c:196
+							__tzfile_read tzfile.c:199
+							__tzfile_read tzfile.c:198
+							__tzfile_read tzfile.c:197
+							__tzfile_read tzfile.c:201
+							__tzfile_read tzfile.c:200
+							__tzfile_read tzfile.c:196
+							__tzfile_read tzfile.c:199
+							__tzfile_read tzfile.c:198
+							__tzfile_read tzfile.c:358
+			url_string url.c:2196
+				full_path_length url.c:1062
+				url_escape_allow_passthrough url.c:302
+					url_escape_1 url.c:245
+				xmalloc xmalloc.c:41
+				full_path_write url.c:1090
+			logprintf log.c:562
+				check_redirect_output log.c:973
+					redirect_output log.c:920
+				log_vprintf_internal log.c:421
+					get_log_fp log.c:317
+					get_warc_log_fp log.c:342
+					saved_append log.c:264
+						saved_append_1 log.c:181
+					logflush log.c:499
+						get_log_fp log.c:317
+						get_warc_log_fp log.c:342
+						rpl_fflush fflush.c:150
+			gethttp http.c:3123
+				initialize_request a_size=0x7fffffffda68, user=0x7fffffffda30, passwd=0x7fffffffda38,
+					url_full_path url.c:1104
+						full_path_length url.c:1062
+						xmalloc xmalloc.c:41
+						full_path_write url.c:1090
+					request_new http.c:164
+						xcalloc xmalloc.c:94
+						xmalloc xmalloc.c:41
+					request_set_header http.c:239
+					aprintf utils.c:302
+					request_set_header http.c:239
+					request_set_header http.c:239
+						c_strcasecmp c-strcasecmp.c:29
+							c_tolower
+							c_tolower
+					request_set_header http.c:239
+						c_strcasecmp c-strcasecmp.c:29
+							c_tolower
+							c_tolower
+						c_strcasecmp c-strcasecmp.c:29
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+					search_netrc netrc.c:83
+						stat ()
+					scheme_default_port url.c:504
+					aprintf utils.c:302
+					request_set_header http.c:239
+						c_strcasecmp c-strcasecmp.c:29
+							c_tolower
+							c_tolower
+						c_strcasecmp c-strcasecmp.c:29
+							c_tolower
+							c_tolower
+						c_strcasecmp c-strcasecmp.c:29
+							c_tolower
+							c_tolower
+					request_set_header http.c:239
+						c_strcasecmp c-strcasecmp.c:29
+							c_tolower
+							c_tolower
+						c_strcasecmp c-strcasecmp.c:29
+							c_tolower
+							c_tolower
+						c_strcasecmp c-strcasecmp.c:29
+							c_tolower
+							c_tolower
+						c_strcasecmp c-strcasecmp.c:29
+							c_tolower
+							c_tolower
+				cookie_header cookies.c:1047
+					count_char cookies.c:829
+					find_chains_of_host cookies.c:852
+						hash_table_count hash.c:586
+				request_set_header http.c:239
+				establish_connection http.c:2056
+					persistent_available_p http.c:1432
+					connect_to_host connect.c:389
+						lookup_host host.c:777
+							is_valid_ipv4_address host.c:439
+							is_valid_ipv6_address host.c:492
+								c_isxdigit
+							cache_query host.c:594
+							quotearg_style quotearg.c:972
+								quotearg_n_style quotearg.c:956
+									quoting_options_from_style quotearg.c:194
+									quotearg_n_options quotearg.c:880
+										quotearg_buffer_restyled
+							logprintf log.c:562
+								check_redirect_output log.c:973
+									redirect_output log.c:920
+								log_vprintf_internal log.c:421
+									get_log_fp log.c:317
+									get_warc_log_fp log.c:342
+									saved_append log.c:264
+										saved_append_1 log.c:181
+											free_log_line log.c:169
+									logflush log.c:499
+										get_log_fp log.c:317
+										get_warc_log_fp log.c:342
+										rpl_fflush fflush.c:150
+							getaddrinfo_with_timeout host.c:401
+								run_with_timeout utils.c:2161
+									getaddrinfo_with_timeout_callback host.c:389
+										__GI_getaddrinfo ../sysdeps/posix/getaddrinfo.c:2425
+											gaih_inet
+												__pthread_once_slow pthread_once.c:116
+													do_init res_hconf.c:323
+												__GI___res_maybe_init res_libc.c:125
+													__GI___res_ninit res_init.c:143
+														__res_vinit res_init.c:299
+															__GI___inet_aton inet_addr.c:212
+												__GI___nss_lookup_function nsswitch.c:466
+													nss_load_library nsswitch.c:358
+														__GI___libc_dlopen_mode dl-libc.c:163
+															dlerror_run dl-libc.c:46
+																_dl_catch_error dl-error.c:187
+																	do_dlopen dl-libc.c:87
+																		_dl_open
+																			_dl_catch_error e@entry=0x7ffff7dec4d0 <dl_open_worker>,
+																				dl_open_worker dl-open.c:575
+																					_dl_init dl-init.c:120
+																						call_init dl-init.c:30
+																							call_init dl-init.c:72
+																								frame_dummy
+																								register_tm_clones
+												_nss_files_gethostbyname4_r @entry=0x7fffffffd488, buffer=buffer@entry=0x7fffffffcf30 "c", buflen=buflen@entry=1064, errnop=errnop@entry=0x7fffffffd478,
+													internal_getent
+													internal_getent
+													internal_getent
+													internal_getent
+													internal_getent
+													internal_getent
+												__GI___nss_lookup_function nsswitch.c:466
+													nss_load_library nsswitch.c:358
+														__GI___libc_dlopen_mode dl-libc.c:163
+															dlerror_run dl-libc.c:46
+																_dl_catch_error dl-error.c:187
+																	do_dlopen dl-libc.c:87
+																		_dl_open dl-open.c:660
+																			_dl_catch_error e@entry=0x7ffff7dec4d0 <dl_open_worker>,
+																				dl_open_worker dl-open.c:575
+																					_dl_init dl-init.c:120
+																						call_init dl-init.c:30
+																							call_init dl-init.c:72
+																								frame_dummy
+																								register_tm_clones
+																								frame_dummy
+																								register_tm_clones
+												_nss_dns_gethostbyname4_r @entry=0x7fffffffd488, buffer=buffer@entry=0x7fffffffcf30 "ÿ\002", buflen=buflen@entry=1064, errnop=errnop@entry=0x7fffffffd478,
+													__GI___res_maybe_init res_libc.c:123
+														__res_vinit res_init.c:299
+															__GI___inet_aton inet_addr.c:212
+													gaih_getanswer =0x7fffffffd488,
+														gaih_getanswer_slice p@entry=0x7fffffffcec8, bufferp=bufferp@entry=0x7fffffffced0, buflenp=buflenp@entry=0x7fffffffced8,
+															__GI_ns_get32 ns_netint.c:43
+															__GI_ns_get32 ns_netint.c:43
+															__GI_ns_get32 ns_netint.c:43
+															__GI_ns_get32 ns_netint.c:43
+															__GI_ns_get32 ns_netint.c:43
+															__GI_ns_get32 ns_netint.c:43
+											__GI___qsort_r msort.c:297
+												msort_with_tmp msort.c:45
+													msort_with_tmp msort.c:83
+														rfc3484_sort ../sysdeps/posix/getaddrinfo.c:1739
+							address_list_from_addrinfo host.c:200
+								xcalloc xmalloc.c:94
+								xmalloc xmalloc.c:41
+							print_address host.c:427
+							logputs log.c:367
+								check_redirect_output log.c:973
+									redirect_output log.c:920
+								get_log_fp log.c:317
+								get_warc_log_fp log.c:342
+								saved_append log.c:264
+									saved_append_1 log.c:181
+								logflush log.c:499
+									get_log_fp log.c:317
+									get_warc_log_fp log.c:342
+									rpl_fflush fflush.c:150
+							logputs log.c:367
+								check_redirect_output log.c:973
+									redirect_output log.c:920
+								get_log_fp log.c:317
+								get_warc_log_fp log.c:342
+								saved_append log.c:264
+									saved_append_1 log.c:181
+								logflush log.c:499
+									get_log_fp log.c:317
+									get_warc_log_fp log.c:342
+									rpl_fflush fflush.c:150
+							print_address host.c:427
+							logputs log.c:367
+								check_redirect_output log.c:973
+									redirect_output log.c:920
+								get_log_fp log.c:317
+								get_warc_log_fp log.c:342
+								saved_append log.c:264
+									saved_append_1 log.c:181
+								logflush log.c:499
+									get_log_fp log.c:317
+									get_warc_log_fp log.c:342
+									rpl_fflush fflush.c:150
+							logputs log.c:367
+								check_redirect_output log.c:973
+									redirect_output log.c:920
+								get_log_fp log.c:317
+								get_warc_log_fp log.c:342
+								saved_append log.c:264
+									saved_append_1 log.c:181
+								logflush log.c:499
+									get_log_fp log.c:317
+									get_warc_log_fp log.c:342
+									rpl_fflush fflush.c:150
+							cache_store host.c:612
+								make_nocase_string_hash_table hash.c:708
+									hash_table_new hash.c:274
+										xmalloc xmalloc.c:41
+										prime_size hash.c:227
+										xmalloc xmalloc.c:41
+								xstrdup_lower utils.c:228
+									xstrdup xmalloc.c:121
+										xmemdup xmalloc.c:113
+											xmalloc xmalloc.c:41
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+								hash_table_put hash.c:424
+									find_cell hash.c:318
+										hash_string_nocase hash.c:684
+											c_tolower
+											c_tolower
+											c_tolower
+											c_tolower
+											c_tolower
+											c_tolower
+											c_tolower
+											c_tolower
+											c_tolower
+											c_tolower
+											c_tolower
+											c_tolower
+											c_tolower
+						address_list_get_bounds host.c:94
+						address_list_address_at host.c:104
+						connect_to_ip connect.c:261
+							print_address host.c:427
+							escnonprint_uri log.c:900
+								escnonprint_internal log.c:830
+									count_nonprint log.c:747
+										c_isprint
+										c_isprint
+										c_isprint
+										c_isprint
+										c_isprint
+										c_isprint
+										c_isprint
+										c_isprint
+										c_isprint
+										c_isprint
+										c_isprint
+										c_isprint
+										c_isprint
+							logprintf log.c:562
+								check_redirect_output log.c:973
+									redirect_output log.c:920
+								log_vprintf_internal log.c:421
+									get_log_fp log.c:317
+									get_warc_log_fp log.c:342
+									saved_append log.c:264
+										saved_append_1 log.c:181
+											free_log_line log.c:169
+									logflush log.c:499
+										get_log_fp log.c:317
+										get_warc_log_fp log.c:342
+										rpl_fflush fflush.c:150
+							sockaddr_set_data connect.c:80
+							sockaddr_size connect.c:159
+							connect_with_timeout connect.c:238
+								run_with_timeout utils.c:2161
+									connect_with_timeout_callback connect.c:227
+							logprintf log.c:562
+								check_redirect_output log.c:973
+									redirect_output log.c:920
+								log_vprintf_internal log.c:421
+									get_log_fp log.c:317
+									get_warc_log_fp log.c:342
+									saved_append log.c:264
+										saved_append_1 log.c:181
+									logflush log.c:499
+										get_log_fp log.c:317
+										get_warc_log_fp log.c:342
+										rpl_fflush fflush.c:150
+						address_list_set_connected host.c:176
+						address_list_release host.c:309
+				request_send http.c:334
+					xmalloc xmalloc.c:41
+					fd_write connect.c:967
+						poll_internal connect.c:897
+							sock_poll connect.c:792
+								select_fd connect.c:682
+						sock_write connect.c:784
+				logprintf log.c:562
+					check_redirect_output log.c:973
+						redirect_output log.c:920
+					log_vprintf_internal log.c:421
+						get_log_fp log.c:317
+						get_warc_log_fp log.c:342
+						saved_append log.c:264
+							saved_append_1 log.c:181
+								free_log_line log.c:169
+						logflush log.c:499
+							get_log_fp log.c:317
+							get_warc_log_fp log.c:342
+							rpl_fflush fflush.c:150
+				read_http_response_head http.c:581
+					fd_read_hunk retr.c:656
+						xmalloc xmalloc.c:41
+						fd_peek connect.c:948
+							poll_internal connect.c:897
+								sock_poll connect.c:792
+									select_fd connect.c:682
+							sock_peek connect.c:800
+						response_head_terminator or (
+						fd_read
+							poll_internal connect.c:897
+							sock_read
+				resp_new
+					xcalloc xmalloc.c:94
+					xrealloc xmalloc.c:53
+				resp_status http.c:789
+					c_isdigit
+					c_isdigit
+					c_isdigit
+					c_isdigit
+					c_isspace
+					c_isspace
+					c_isdigit
+					c_isdigit
+					c_isdigit
+					c_isspace
+					c_isspace
+					c_isspace
+					c_isspace
+					c_isspace
+					strdupdelim
+						xmalloc xmalloc.c:41
+				xstrdup xmalloc.c:121
+					xmemdup xmalloc.c:113
+						xmalloc xmalloc.c:41
+				quotearg_style quotearg.c:972
+					quotearg_n_style quotearg.c:956
+						quoting_options_from_style quotearg.c:194
+						quotearg_n_options quotearg.c:880
+							quotearg_buffer_restyled
+				logprintf log.c:562
+					check_redirect_output log.c:973
+						redirect_output log.c:920
+					log_vprintf_internal log.c:421
+						get_log_fp log.c:317
+						get_warc_log_fp log.c:342
+						saved_append log.c:264
+							saved_append_1 log.c:181
+						logflush log.c:499
+							get_log_fp log.c:317
+							get_warc_log_fp log.c:342
+							rpl_fflush fflush.c:150
+				resp_header_copy http.c:750
+					resp_header_get http.c:735
+						resp_header_locate http.c:691
+							c_strncasecmp
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+				resp_header_copy http.c:750
+					resp_header_get http.c:735
+						resp_header_locate http.c:691
+							c_strncasecmp
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+				c_strcasecmp c-strcasecmp.c:29
+					c_tolower
+					c_tolower
+				resp_header_copy http.c:750
+					resp_header_get http.c:735
+						resp_header_locate http.c:691
+				resp_header_locate http.c:691
+					c_strncasecmp
+						c_tolower
+						c_tolower
+					c_strncasecmp c-strncasecmp.c:29
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+					c_isspace
+					c_isspace
+					c_isspace
+					c_isspace
+					c_isspace
+				cookie_handle_set_cookie cookies.c:743
+					parse_set_cookie cookies.c:354
+						cookie_new cookies.c:132
+							xcalloc xmalloc.c:94
+						extract_param http.c:1119
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							modify_param_name http.c:1051
+						strdupdelim utils.c:242
+							xmalloc xmalloc.c:41
+						strdupdelim utils.c:242
+							xmalloc xmalloc.c:41
+						extract_param http.c:1119
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							modify_param_name http.c:1051
+						c_strncasecmp c-strncasecmp.c:29
+							c_tolower
+							c_tolower
+						c_strncasecmp c-strncasecmp.c:29
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+						extract_param http.c:1119
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							modify_param_name http.c:1051
+						c_strncasecmp c-strncasecmp.c:29
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+						strdupdelim utils.c:242
+							xmalloc xmalloc.c:41
+						extract_param http.c:1119
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							modify_param_name http.c:1051
+						c_strncasecmp c-strncasecmp.c:29
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+							c_tolower
+						strdupdelim utils.c:242
+							xmalloc xmalloc.c:41
+						extract_param http.c:1119
+							c_isspace
+					check_domain_match cookies.c:597
+						match_tail utils.c:1163
+						match_tail utils.c:1163
+					check_path_match cookies.c:721
+						path_matches cookies.c:893
+					store_cookie cookies.c:213
+						hash_table_get_pair hash.c:353
+							find_cell hash.c:318
+								hash_string_nocase hash.c:684
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+						xstrdup xmalloc.c:121
+							xmemdup xmalloc.c:113
+								xmalloc xmalloc.c:41
+						hash_table_put hash.c:424
+							find_cell hash.c:318
+								hash_string_nocase hash.c:684
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+									c_tolower
+				resp_header_locate http.c:691
+				register_persistent http.c:1398
+					xstrdup xmalloc.c:121
+						xmemdup xmalloc.c:113
+							xmalloc xmalloc.c:41
+				check_file_output http.c:2294
+					acceptable utils.c:1047
+					file_exists_p utils.c:566
+						stat ()
+				xstrdup xmalloc.c:121
+					xmemdup xmalloc.c:113
+						xmalloc xmalloc.c:41
+				resp_header_strdup http.c:768
+					resp_header_get http.c:735
+						resp_header_locate http.c:691
+							c_strncasecmp
+								c_tolower
+								c_tolower
+				parse_strict_transport_security http.c:1290
+				resp_header_strdup http.c:768
+					resp_header_get http.c:735
+						resp_header_locate http.c:691
+							c_strncasecmp
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+					strdupdelim
+						xmalloc xmalloc.c:41
+				resp_header_strdup http.c:768
+					resp_header_get http.c:735
+						resp_header_locate http.c:691
+				resp_header_strdup http.c:768
+					resp_header_get http.c:735
+						resp_header_locate http.c:691
+							c_strncasecmp
+								c_tolower
+								c_tolower
+							c_strncasecmp
+								c_tolower
+								c_tolower
+							c_strncasecmp h=/\r\n\r\n", s2=0x4643e1 "Last-Modified", n=13)
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+							c_isspace
+					strdupdelim h=/\r\n\r\n",
+						xmalloc xmalloc.c:41
+				resp_header_copy http.c:750
+					resp_header_get http.c:735
+						resp_header_locate http.c:691
+							c_strncasecmp
+								c_tolower
+								c_tolower
+							c_strncasecmp
+								c_tolower
+								c_tolower
+								c_tolower
+								c_tolower
+							c_strncasecmp h=/\r\n\r\n", s2=0x46440c "Content-Range", n=13)
+								c_tolower
+								c_tolower
+				resp_header_copy http.c:750
+					resp_header_get http.c:735
+						resp_header_locate http.c:691
+				set_content_type http.c:2591
+					c_strcasecmp c-strcasecmp.c:29
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+					c_strcasecmp c-strcasecmp.c:29
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+						c_tolower
+				logputs log.c:367
+					check_redirect_output log.c:973
+						redirect_output log.c:920
+					get_log_fp log.c:317
+					get_warc_log_fp log.c:342
+					saved_append log.c:264
+						saved_append_1 log.c:181
+							free_log_line log.c:169
+					logflush log.c:499
+						get_log_fp log.c:317
+						get_warc_log_fp log.c:342
+						rpl_fflush fflush.c:150
+				number_to_static_string utils.c:1918
+					number_to_string utils.c:1783
+				logputs log.c:367
+					check_redirect_output log.c:973
+						redirect_output log.c:920
+					get_log_fp log.c:317
+					get_warc_log_fp log.c:342
+					saved_append log.c:264
+						saved_append_1 log.c:181
+					logflush log.c:499
+						get_log_fp log.c:317
+						get_warc_log_fp log.c:342
+						rpl_fflush fflush.c:150
+				human_readable utils.c:1686
+				logprintf log.c:562
+					check_redirect_output log.c:973
+						redirect_output log.c:920
+					log_vprintf_internal log.c:421
+						get_log_fp log.c:317
+						get_warc_log_fp log.c:342
+						saved_append log.c:264
+							saved_append_1 log.c:181
+						logflush log.c:499
+							get_log_fp log.c:317
+							get_warc_log_fp log.c:342
+							rpl_fflush fflush.c:150
+				quotearg_style quotearg.c:972
+					quotearg_n_style quotearg.c:956
+						quoting_options_from_style quotearg.c:194
+						quotearg_n_options quotearg.c:880
+							quotearg_buffer_restyled
+				logprintf log.c:562
+					check_redirect_output log.c:973
+						redirect_output log.c:920
+					log_vprintf_internal log.c:421
+						get_log_fp log.c:317
+						get_warc_log_fp log.c:342
+						saved_append log.c:264
+							saved_append_1 log.c:181
+						logflush log.c:499
+							get_log_fp log.c:317
+							get_warc_log_fp log.c:342
+							rpl_fflush fflush.c:150
+				open_output_stream http.c:2508
+					mkalldirs url.c:1245
+					quote quotearg.c:1081
+						quote_n quotearg.c:1075
+							quote_n_mem quotearg.c:1063
+								quotearg_n_options quotearg.c:880
+									quotearg_buffer_restyled
+										gettext_quote quotearg.c:209
+											locale_charset localcharset.c:696
+												rpl_nl_langinfo nl_langinfo.c:95
+											c_strcasecmp c-strcasecmp.c:29
+												c_tolower
+												c_tolower
+											c_strcasecmp c-strcasecmp.c:29
+												c_tolower
+												c_tolower
+										gettext_quote quotearg.c:209
+											locale_charset localcharset.c:696
+												rpl_nl_langinfo nl_langinfo.c:95
+											c_strcasecmp c-strcasecmp.c:29
+												c_tolower
+												c_tolower
+											c_strcasecmp c-strcasecmp.c:29
+												c_tolower
+												c_tolower
+					logprintf log.c:562
+						check_redirect_output log.c:973
+							redirect_output log.c:920
+						log_vprintf_internal log.c:421
+							get_log_fp log.c:317
+							get_warc_log_fp log.c:342
+							saved_append log.c:264
+								saved_append_1 log.c:181
+									free_log_line log.c:169
+							logflush log.c:499
+								get_log_fp log.c:317
+								get_warc_log_fp log.c:342
+								rpl_fflush fflush.c:150
+				set_file_metadata tr.c:69
+					escnonprint_uri log.c:900
+						escnonprint_internal log.c:830
+							count_nonprint log.c:747
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+								c_isprint
+					write_xattr_metadata tr.c:31
+				read_response_body
+					fd_read_body retr.c:256
+						xmalloc xmalloc.c:41
+						progress_create progress.c:159
+							bar_create progress.c:569
+								xcalloc xmalloc.c:94
+								determine_screen_width utils.c:1940
+									rpl_ioctl ioctl.c:32
+								xmalloc xmalloc.c:41
+								logputs log.c:367
+									check_redirect_output log.c:973
+										redirect_output log.c:920
+									get_log_fp log.c:317
+									get_warc_log_fp log.c:342
+									saved_append log.c:264
+										saved_append_1 log.c:181
+											free_log_line log.c:169
+									logflush log.c:499
+										get_log_fp log.c:317
+										get_warc_log_fp log.c:342
+										rpl_fflush fflush.c:150
+								create_image progress.c:896
+									count_cols progress.c:794
+									human_readable utils.c:1686
+									count_cols progress.c:794
+									count_cols progress.c:794
+								display_image progress.c:1186
+									log_set_save_context log.c:551
+									logputs log.c:367
+										check_redirect_output log.c:973
+											redirect_output log.c:920
+										get_progress_fp log.c:327
+											get_log_fp log.c:317
+										get_warc_log_fp log.c:342
+										logflush log.c:499
+											get_log_fp log.c:317
+											get_warc_log_fp log.c:342
+											rpl_fflush fflush.c:150
+									logputs log.c:367
+										check_redirect_output log.c:973
+											redirect_output log.c:920
+										get_progress_fp log.c:327
+											get_log_fp log.c:317
+										get_warc_log_fp log.c:342
+										logflush log.c:499
+											get_log_fp log.c:317
+											get_warc_log_fp log.c:342
+											rpl_fflush fflush.c:150
+									log_set_save_context log.c:551
+						progress_interactive_p progress.c:177
+						ptimer_new ptimer.c:315
+							xcalloc xmalloc.c:94
+							ptimer_reset ptimer.c:345
+								posix_measure ptimer.c:168
+						ptimer_read ptimer.c:401
+						fd_read connect.c:923
+							208, connect.c:923
+							poll_internal connect.c:897
+								sock_poll connect.c:792
+									select_fd connect.c:682
+							sock_read connect.c:774
+								650, connect.c:774
+						ptimer_measure ptimer.c:360
+							posix_measure ptimer.c:168
+							posix_diff ptimer.c:174
+						ptimer_read ptimer.c:401
+						write_data a (out=0x6a8760, out2=0x0,
+							rpl_fflush fflush.c:150
+						ptimer_read ptimer.c:401
+						progress_update progress.c:186
+							bar_update progress.c:612
+								update_speed_ring progress.c:703
+							bar_draw progress.c:631
+						ptimer_read ptimer.c:401
+						progress_finish progress.c:196
+							bar_finish progress.c:665
+								create_image progress.c:896
+									count_cols progress.c:794
+									human_readable utils.c:1686
+									count_cols progress.c:794
+									" progress.c:794
+									print_decimal utils.c:2632
+									count_cols progress.c:794
+								display_image progress.c:1186
+									log_set_save_context log.c:551
+									logputs log.c:367
+										check_redirect_output log.c:973
+											redirect_output log.c:920
+										get_progress_fp log.c:327
+											get_log_fp log.c:317
+										get_warc_log_fp log.c:342
+										logflush log.c:499
+											get_log_fp log.c:317
+											get_warc_log_fp log.c:342
+											rpl_fflush fflush.c:150
+									logputs log.c:367
+										check_redirect_output log.c:973
+											redirect_output log.c:920
+										get_progress_fp log.c:327
+											get_log_fp log.c:317
+										get_warc_log_fp log.c:342
+										logflush log.c:499
+											get_log_fp log.c:317
+											get_warc_log_fp log.c:342
+											rpl_fflush fflush.c:150
+									log_set_save_context log.c:551
+								logputs log.c:367
+									check_redirect_output log.c:973
+										redirect_output log.c:920
+									get_log_fp log.c:317
+									get_warc_log_fp log.c:342
+									saved_append log.c:264
+										saved_append_1 log.c:181
+											free_log_line log.c:169
+									logflush log.c:499
+										get_log_fp log.c:317
+										get_warc_log_fp log.c:342
+										rpl_fflush fflush.c:150
+								logputs log.c:367
+									check_redirect_output log.c:973
+										redirect_output log.c:920
+									get_progress_fp log.c:327
+										get_log_fp log.c:317
+									get_warc_log_fp log.c:342
+									saved_append log.c:264
+										saved_append_1 log.c:181
+											free_log_line log.c:169
+									logflush log.c:499
+										get_log_fp log.c:317
+										get_warc_log_fp log.c:342
+										rpl_fflush fflush.c:150
+						ptimer_read ptimer.c:401
+						ptimer_destroy ptimer.c:334
+				resp_free http.c:848
+				request_free http.c:398
+					release_header http.c:187
+					release_header http.c:187
+					release_header http.c:187
+					release_header http.c:187
+					release_header http.c:187
+			datetime_str utils.c:458
+				fmttime utils.c:434
+			http_atotm http.c:4869
+				check_end http.c:4827
+					c_isspace
+					c_isspace
+			set_local_file retr.c:1524
+			touch utils.c:534
+			retr_rate retr.c:784
+				calc_rate retr.c:812
+					convert_to_bits utils.c:1929
+			number_to_static_string utils.c:1918
+				number_to_string utils.c:1783
+			number_to_static_string utils.c:1918
+				number_to_string utils.c:1783
+			quote quotearg.c:1081
+				quote_n quotearg.c:1075
+					quote_n_mem quotearg.c:1063
+						quotearg_n_options quotearg.c:880
+							quotearg_buffer_restyled
+								gettext_quote quotearg.c:209
+									locale_charset localcharset.c:696
+										rpl_nl_langinfo nl_langinfo.c:95
+									c_strcasecmp c-strcasecmp.c:29
+										c_tolower
+										c_tolower
+									c_strcasecmp c-strcasecmp.c:29
+										c_tolower
+										c_tolower
+								gettext_quote quotearg.c:209
+									locale_charset localcharset.c:696
+										rpl_nl_langinfo nl_langinfo.c:95
+									c_strcasecmp c-strcasecmp.c:29
+										c_tolower
+										c_tolower
+									c_strcasecmp c-strcasecmp.c:29
+										c_tolower
+										c_tolower
+			logprintf log.c:562
+				check_redirect_output log.c:973
+					redirect_output log.c:920
+				log_vprintf_internal log.c:421
+					get_log_fp log.c:317
+					get_warc_log_fp log.c:342
+					saved_append log.c:264
+						saved_append_1 log.c:181
+							free_log_line log.c:169
+						saved_append_1 log.c:181
+							free_log_line log.c:169
+					logflush log.c:499
+						get_log_fp log.c:317
+						get_warc_log_fp log.c:342
+						rpl_fflush fflush.c:150
+			number_to_static_string utils.c:1918
+				number_to_string utils.c:1783
+			number_to_static_string utils.c:1918
+				number_to_string utils.c:1783
+			logprintf log.c:562
+				check_redirect_output log.c:973
+					redirect_output log.c:920
+			downloaded_file convert.c:1080
+				make_string_hash_table hash.c:667
+					hash_table_new hash.c:274
+						xmalloc xmalloc.c:41
+						prime_size hash.c:227
+						xmalloc xmalloc.c:41
+				hash_table_get hash.c:339
+					find_cell hash.c:318
+						hash_string hash.c:643
+				downloaded_mode_to_ptr convert.c:1046
+				xstrdup xmalloc.c:121
+					xmemdup xmalloc.c:113
+						xmalloc xmalloc.c:41
+				hash_table_put hash.c:424
+					find_cell hash.c:318
+						hash_string hash.c:643
+			xstrdup xmalloc.c:121
+				xmemdup xmalloc.c:113
+					xmalloc xmalloc.c:41
+			free_hstat http.c:1607
+		register_download convert.c:867
+			make_string_hash_table hash.c:667
+				hash_table_new hash.c:274
+					xmalloc xmalloc.c:41
+					prime_size hash.c:227
+					xmalloc xmalloc.c:41
+			make_string_hash_table hash.c:667
+				hash_table_new hash.c:274
+					xmalloc xmalloc.c:41
+					prime_size hash.c:227
+					xmalloc xmalloc.c:41
+			hash_table_get_pair hash.c:353
+				find_cell hash.c:318
+					hash_string hash.c:643
+			xstrdup xmalloc.c:121
+				xmemdup xmalloc.c:113
+					xmalloc xmalloc.c:41
+			xstrdup xmalloc.c:121
+				xmemdup xmalloc.c:113
+					xmalloc xmalloc.c:41
+			hash_table_put hash.c:424
+				find_cell hash.c:318
+					hash_string hash.c:643
+			hash_table_get_pair hash.c:353
+				find_cell hash.c:318
+					hash_string hash.c:643
+			xstrdup xmalloc.c:121
+				xmemdup xmalloc.c:113
+					xmalloc xmalloc.c:41
+			xstrdup xmalloc.c:121
+				xmemdup xmalloc.c:113
+					xmalloc xmalloc.c:41
+			hash_table_put hash.c:424
+				find_cell hash.c:318
+					hash_string hash.c:643
+		register_html convert.c:981
+			make_string_hash_table hash.c:667
+				hash_table_new hash.c:274
+					xmalloc xmalloc.c:41
+					prime_size hash.c:227
+					xmalloc xmalloc.c:41
+			string_set_add utils.c:1490
+				hash_table_contains hash.c:371
+					find_cell hash.c:318
+						hash_string hash.c:643
+				xstrdup xmalloc.c:121
+					xmemdup xmalloc.c:113
+						xmalloc xmalloc.c:41
+				hash_table_put hash.c:424
+					find_cell hash.c:318
+						hash_string hash.c:643
+		inform_exit_status exits.c:75
+			get_status_for_err exits.c:38
+	url_free url.c:1221
+	save_hsts main.c:215
+		get_hsts_database main.c:175
+			aprintf utils.c:302
+		hsts_store_has_changed hsts.c:591
+		hsts_store_close hsts.c:596
+			hash_table_iterate hash.c:550
+			hash_table_iter_next hash.c:566
+			hash_table_iter_next hash.c:566
+			hash_table_iter_next hash.c:566
+			hash_table_iter_next hash.c:566
+			hash_table_iter_next hash.c:566
+			hash_table_iter_next hash.c:566
+			hash_table_iter_next hash.c:566
+			hash_table_iter_next hash.c:566
+			hash_table_destroy hash.c:307
+	cleanup init.c:1899
+		log_close log.c:681
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+			free_log_line log.c:169
+	get_exit_status exits.c:89
+	__GI_exit exit.c:104
+		__run_exit_handlers exit.c:82
+			_dl_fini dl-fini.c:235
+				__do_global_dtors_aux
+				_fini
+				_fini
+				__do_global_dtors_aux
+				_fini
+				_fini
+				__do_global_dtors_aux
+				__do_global_dtors_aux
+				__do_global_dtors_aux
+				__do_global_dtors_aux
+				__do_global_dtors_aux
