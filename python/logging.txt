@@ -1,0 +1,20 @@
+a.b.c(filter) ---> handler1-----handler2----handler3
+  |                  |             |
+a.b(filter)       filter11      filter21
+  |                  |             |
+  a(filter)       filter12      filter22
+  |
+ root(filter)
+
+
+
+
+logger=a.b.c
+while logger:
+   if logger.filter():
+	for handler in logger.handlers:
+		# call all filters in handler, return False if one filter return false
+     		if handler.filter():
+			handler.handler()
+   if propagate:#(defualt to true)
+	logger = logger.parent
