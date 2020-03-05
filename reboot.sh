@@ -8,6 +8,9 @@ fi
 for ((c=0; c<=$NUM; c++))
 do
 	NEWNAME="dlvm"$c
+	time=`shuf -i 1-3 -n 1`
+	echo "sleep $time ..."
+	sleep $time
 	xe vm-reboot vm=$NEWNAME &
 done
 

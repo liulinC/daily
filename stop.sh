@@ -8,6 +8,6 @@ fi
 for ((c=0; c<=$NUM; c++))
 do
 	NEWNAME="dlvm"$c
-	xe vm-shutdown vm=$NEWNAME &
+	xe vm-shutdown vm=$NEWNAME force=true &
 done
 
