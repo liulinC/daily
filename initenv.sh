@@ -6,8 +6,8 @@ yum install -y tmux
 
 # install vim
 echo "init vim"
-yum install -y vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+yum install -y vim || true
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim ||true
 cp -f ./.vimrc ~/.vimrc
 
 

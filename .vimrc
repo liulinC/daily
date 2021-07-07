@@ -39,6 +39,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'fatih/vim-go'
 Plugin 'sbdchd/neoformat'
 Plugin 'Yggdroot/indentLine'
+Plugin 'codota/tabnine-vim'
 
 " let g:move_key_modifier = 'A'
 
